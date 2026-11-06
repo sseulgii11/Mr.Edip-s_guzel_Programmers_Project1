@@ -103,5 +103,29 @@
   <ItemGroup>
     <None Include="Resources\49929-7-daisy-duck-free-hd-image.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dice6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dice1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dice2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dice3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dice4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dice5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mickey_Mouse_head_and_ears.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mickey-clubhouse_0-88521e9b3d8047a7b8edc91a803e1e4c.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

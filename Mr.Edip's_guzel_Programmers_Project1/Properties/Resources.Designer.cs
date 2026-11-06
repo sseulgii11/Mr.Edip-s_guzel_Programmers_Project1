@@ -93,6 +93,66 @@ namespace Mr.Edip_s_guzel_Programmers_Project1.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Dice1 {
+            get {
+                object obj = ResourceManager.GetObject("Dice1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Dice2 {
+            get {
+                object obj = ResourceManager.GetObject("Dice2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Dice3 {
+            get {
+                object obj = ResourceManager.GetObject("Dice3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Dice4 {
+            get {
+                object obj = ResourceManager.GetObject("Dice4", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Dice5 {
+            get {
+                object obj = ResourceManager.GetObject("Dice5", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Dice6 {
+            get {
+                object obj = ResourceManager.GetObject("Dice6", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap hd_disney_goofy_mickey_mouse_standing_pose_png_701751694869345pjcqlxx6gb {
             get {
                 object obj = ResourceManager.GetObject("hd-disney-goofy-mickey-mouse-standing-pose-png-701751694869345pjcqlxx6gb", resourceCulture);
@@ -106,6 +166,26 @@ namespace Mr.Edip_s_guzel_Programmers_Project1.Properties {
         internal static System.Drawing.Bitmap images {
             get {
                 object obj = ResourceManager.GetObject("images", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap mickey_clubhouse_0_88521e9b3d8047a7b8edc91a803e1e4c {
+            get {
+                object obj = ResourceManager.GetObject("mickey-clubhouse_0-88521e9b3d8047a7b8edc91a803e1e4c", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Mickey_Mouse_head_and_ears {
+            get {
+                object obj = ResourceManager.GetObject("Mickey_Mouse_head_and_ears", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
