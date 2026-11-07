@@ -87,39 +87,42 @@
             this.groupBox1.Controls.Add(this.SecondPlayerName);
             this.groupBox1.Controls.Add(this.FirstPlayerName);
             this.groupBox1.Controls.Add(this.initializationsRounds);
-            this.groupBox1.Location = new System.Drawing.Point(17, 67);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
+            this.groupBox1.Location = new System.Drawing.Point(6, 28);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(8, 7, 8, 7);
-            this.groupBox1.Size = new System.Drawing.Size(613, 329);
+            this.groupBox1.Size = new System.Drawing.Size(230, 138);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Initializations";
             // 
             // tb1PlayerName
             // 
-            this.tb1PlayerName.Location = new System.Drawing.Point(298, 203);
+            this.tb1PlayerName.Location = new System.Drawing.Point(112, 85);
+            this.tb1PlayerName.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.tb1PlayerName.Name = "tb1PlayerName";
-            this.tb1PlayerName.Size = new System.Drawing.Size(275, 38);
+            this.tb1PlayerName.Size = new System.Drawing.Size(106, 20);
             this.tb1PlayerName.TabIndex = 5;
+            this.tb1PlayerName.TextChanged += new System.EventHandler(this.tb1PlayerName_TextChanged);
             // 
             // tb2PlayerName
             // 
-            this.tb2PlayerName.Location = new System.Drawing.Point(298, 250);
+            this.tb2PlayerName.Location = new System.Drawing.Point(112, 105);
+            this.tb2PlayerName.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.tb2PlayerName.Name = "tb2PlayerName";
-            this.tb2PlayerName.Size = new System.Drawing.Size(275, 38);
+            this.tb2PlayerName.Size = new System.Drawing.Size(106, 20);
             this.tb2PlayerName.TabIndex = 4;
+            this.tb2PlayerName.TextChanged += new System.EventHandler(this.tb2PlayerName_TextChanged);
             // 
             // numberRounds
             // 
-            this.numberRounds.Location = new System.Drawing.Point(130, 56);
+            this.numberRounds.Location = new System.Drawing.Point(49, 23);
+            this.numberRounds.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.numberRounds.Maximum = new decimal(new int[] {
             5,
             0,
             0,
             0});
             this.numberRounds.Name = "numberRounds";
-            this.numberRounds.Size = new System.Drawing.Size(120, 38);
+            this.numberRounds.Size = new System.Drawing.Size(45, 20);
             this.numberRounds.TabIndex = 3;
             this.numberRounds.Value = new decimal(new int[] {
             1,
@@ -130,27 +133,30 @@
             // SecondPlayerName
             // 
             this.SecondPlayerName.AutoSize = true;
-            this.SecondPlayerName.Location = new System.Drawing.Point(11, 250);
+            this.SecondPlayerName.Location = new System.Drawing.Point(4, 105);
+            this.SecondPlayerName.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.SecondPlayerName.Name = "SecondPlayerName";
-            this.SecondPlayerName.Size = new System.Drawing.Size(281, 32);
+            this.SecondPlayerName.Size = new System.Drawing.Size(107, 13);
             this.SecondPlayerName.TabIndex = 2;
             this.SecondPlayerName.Text = "Second Player Name";
             // 
             // FirstPlayerName
             // 
             this.FirstPlayerName.AutoSize = true;
-            this.FirstPlayerName.Location = new System.Drawing.Point(11, 206);
+            this.FirstPlayerName.Location = new System.Drawing.Point(4, 86);
+            this.FirstPlayerName.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.FirstPlayerName.Name = "FirstPlayerName";
-            this.FirstPlayerName.Size = new System.Drawing.Size(239, 32);
+            this.FirstPlayerName.Size = new System.Drawing.Size(89, 13);
             this.FirstPlayerName.TabIndex = 1;
             this.FirstPlayerName.Text = "First Player Name";
             // 
             // initializationsRounds
             // 
             this.initializationsRounds.AutoSize = true;
-            this.initializationsRounds.Location = new System.Drawing.Point(11, 56);
+            this.initializationsRounds.Location = new System.Drawing.Point(4, 23);
+            this.initializationsRounds.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.initializationsRounds.Name = "initializationsRounds";
-            this.initializationsRounds.Size = new System.Drawing.Size(112, 32);
+            this.initializationsRounds.Size = new System.Drawing.Size(44, 13);
             this.initializationsRounds.TabIndex = 0;
             this.initializationsRounds.Text = "Rounds";
             // 
@@ -161,9 +167,11 @@
             this.groupBox2.Controls.Add(this.actionTurnIndicator);
             this.groupBox2.Controls.Add(this.actionCurrentRound);
             this.groupBox2.Controls.Add(this.actionRound);
-            this.groupBox2.Location = new System.Drawing.Point(17, 429);
+            this.groupBox2.Location = new System.Drawing.Point(6, 180);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(612, 516);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.groupBox2.Size = new System.Drawing.Size(230, 216);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Action";
@@ -172,18 +180,20 @@
             // 
             this.pbDice.BackgroundImage = global::Mr.Edip_s_guzel_Programmers_Project1.Properties.Resources.mickey_clubhouse_0_88521e9b3d8047a7b8edc91a803e1e4c;
             this.pbDice.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pbDice.Location = new System.Drawing.Point(184, 320);
+            this.pbDice.Location = new System.Drawing.Point(69, 134);
+            this.pbDice.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.pbDice.Name = "pbDice";
-            this.pbDice.Size = new System.Drawing.Size(193, 168);
+            this.pbDice.Size = new System.Drawing.Size(72, 70);
             this.pbDice.TabIndex = 4;
             this.pbDice.TabStop = false;
             // 
             // buttonRoll
             // 
             this.buttonRoll.Enabled = false;
-            this.buttonRoll.Location = new System.Drawing.Point(17, 231);
+            this.buttonRoll.Location = new System.Drawing.Point(6, 97);
+            this.buttonRoll.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.buttonRoll.Name = "buttonRoll";
-            this.buttonRoll.Size = new System.Drawing.Size(576, 53);
+            this.buttonRoll.Size = new System.Drawing.Size(216, 22);
             this.buttonRoll.TabIndex = 3;
             this.buttonRoll.Text = "ROLL";
             this.buttonRoll.UseVisualStyleBackColor = true;
@@ -194,27 +204,30 @@
             this.actionTurnIndicator.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.actionTurnIndicator.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.900001F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.actionTurnIndicator.ForeColor = System.Drawing.SystemColors.InfoText;
-            this.actionTurnIndicator.Location = new System.Drawing.Point(25, 169);
+            this.actionTurnIndicator.Location = new System.Drawing.Point(9, 71);
+            this.actionTurnIndicator.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.actionTurnIndicator.Name = "actionTurnIndicator";
-            this.actionTurnIndicator.Size = new System.Drawing.Size(225, 39);
+            this.actionTurnIndicator.Size = new System.Drawing.Size(100, 17);
             this.actionTurnIndicator.TabIndex = 2;
             this.actionTurnIndicator.Text = "Player Name";
             // 
             // actionCurrentRound
             // 
             this.actionCurrentRound.AutoSize = true;
-            this.actionCurrentRound.Location = new System.Drawing.Point(129, 76);
+            this.actionCurrentRound.Location = new System.Drawing.Point(48, 32);
+            this.actionCurrentRound.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.actionCurrentRound.Name = "actionCurrentRound";
-            this.actionCurrentRound.Size = new System.Drawing.Size(92, 32);
+            this.actionCurrentRound.Size = new System.Drawing.Size(35, 13);
             this.actionCurrentRound.TabIndex = 1;
             this.actionCurrentRound.Text = "label3";
             // 
             // actionRound
             // 
             this.actionRound.AutoSize = true;
-            this.actionRound.Location = new System.Drawing.Point(17, 76);
+            this.actionRound.Location = new System.Drawing.Point(6, 32);
+            this.actionRound.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.actionRound.Name = "actionRound";
-            this.actionRound.Size = new System.Drawing.Size(106, 32);
+            this.actionRound.Size = new System.Drawing.Size(42, 13);
             this.actionRound.TabIndex = 0;
             this.actionRound.Text = "Round:";
             // 
@@ -228,9 +241,11 @@
             this.groupBox3.Controls.Add(this.rb3Avatar);
             this.groupBox3.Controls.Add(this.rb2Avatar);
             this.groupBox3.Controls.Add(this.rb1Avatar);
-            this.groupBox3.Location = new System.Drawing.Point(658, 67);
+            this.groupBox3.Location = new System.Drawing.Point(247, 28);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(274, 692);
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.groupBox3.Size = new System.Drawing.Size(103, 290);
             this.groupBox3.TabIndex = 2;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Avatars";
@@ -238,9 +253,10 @@
             // pb4Avatar
             // 
             this.pb4Avatar.Image = global::Mr.Edip_s_guzel_Programmers_Project1.Properties.Resources._142767_goofy;
-            this.pb4Avatar.Location = new System.Drawing.Point(69, 513);
+            this.pb4Avatar.Location = new System.Drawing.Point(26, 215);
+            this.pb4Avatar.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.pb4Avatar.Name = "pb4Avatar";
-            this.pb4Avatar.Size = new System.Drawing.Size(138, 133);
+            this.pb4Avatar.Size = new System.Drawing.Size(52, 56);
             this.pb4Avatar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pb4Avatar.TabIndex = 7;
             this.pb4Avatar.TabStop = false;
@@ -248,9 +264,10 @@
             // pb3Avatar
             // 
             this.pb3Avatar.Image = global::Mr.Edip_s_guzel_Programmers_Project1.Properties.Resources._49929_7_daisy_duck_free_hd_image;
-            this.pb3Avatar.Location = new System.Drawing.Point(69, 361);
+            this.pb3Avatar.Location = new System.Drawing.Point(26, 151);
+            this.pb3Avatar.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.pb3Avatar.Name = "pb3Avatar";
-            this.pb3Avatar.Size = new System.Drawing.Size(138, 133);
+            this.pb3Avatar.Size = new System.Drawing.Size(52, 56);
             this.pb3Avatar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pb3Avatar.TabIndex = 6;
             this.pb3Avatar.TabStop = false;
@@ -258,9 +275,10 @@
             // pb2Avatar
             // 
             this.pb2Avatar.Image = global::Mr.Edip_s_guzel_Programmers_Project1.Properties.Resources.mickey_mouse_icon_3;
-            this.pb2Avatar.Location = new System.Drawing.Point(69, 206);
+            this.pb2Avatar.Location = new System.Drawing.Point(26, 86);
+            this.pb2Avatar.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.pb2Avatar.Name = "pb2Avatar";
-            this.pb2Avatar.Size = new System.Drawing.Size(138, 133);
+            this.pb2Avatar.Size = new System.Drawing.Size(52, 56);
             this.pb2Avatar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pb2Avatar.TabIndex = 5;
             this.pb2Avatar.TabStop = false;
@@ -268,9 +286,10 @@
             // pb1Avatar
             // 
             this.pb1Avatar.Image = global::Mr.Edip_s_guzel_Programmers_Project1.Properties.Resources.minnie_mouse_png_photos_1;
-            this.pb1Avatar.Location = new System.Drawing.Point(69, 56);
+            this.pb1Avatar.Location = new System.Drawing.Point(26, 23);
+            this.pb1Avatar.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.pb1Avatar.Name = "pb1Avatar";
-            this.pb1Avatar.Size = new System.Drawing.Size(138, 133);
+            this.pb1Avatar.Size = new System.Drawing.Size(52, 56);
             this.pb1Avatar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pb1Avatar.TabIndex = 4;
             this.pb1Avatar.TabStop = false;
@@ -279,9 +298,10 @@
             // 
             this.rb4Avatar.AutoSize = true;
             this.rb4Avatar.ForeColor = System.Drawing.SystemColors.Control;
-            this.rb4Avatar.Location = new System.Drawing.Point(31, 560);
+            this.rb4Avatar.Location = new System.Drawing.Point(12, 235);
+            this.rb4Avatar.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.rb4Avatar.Name = "rb4Avatar";
-            this.rb4Avatar.Size = new System.Drawing.Size(214, 36);
+            this.rb4Avatar.Size = new System.Drawing.Size(85, 17);
             this.rb4Avatar.TabIndex = 3;
             this.rb4Avatar.TabStop = true;
             this.rb4Avatar.Text = "radioButton4";
@@ -291,9 +311,10 @@
             // 
             this.rb3Avatar.AutoSize = true;
             this.rb3Avatar.ForeColor = System.Drawing.SystemColors.Control;
-            this.rb3Avatar.Location = new System.Drawing.Point(31, 408);
+            this.rb3Avatar.Location = new System.Drawing.Point(12, 171);
+            this.rb3Avatar.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.rb3Avatar.Name = "rb3Avatar";
-            this.rb3Avatar.Size = new System.Drawing.Size(214, 36);
+            this.rb3Avatar.Size = new System.Drawing.Size(85, 17);
             this.rb3Avatar.TabIndex = 2;
             this.rb3Avatar.TabStop = true;
             this.rb3Avatar.Text = "radioButton3";
@@ -303,9 +324,10 @@
             // 
             this.rb2Avatar.AutoSize = true;
             this.rb2Avatar.ForeColor = System.Drawing.SystemColors.Control;
-            this.rb2Avatar.Location = new System.Drawing.Point(31, 246);
+            this.rb2Avatar.Location = new System.Drawing.Point(12, 103);
+            this.rb2Avatar.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.rb2Avatar.Name = "rb2Avatar";
-            this.rb2Avatar.Size = new System.Drawing.Size(214, 36);
+            this.rb2Avatar.Size = new System.Drawing.Size(85, 17);
             this.rb2Avatar.TabIndex = 1;
             this.rb2Avatar.TabStop = true;
             this.rb2Avatar.Text = "radioButton2";
@@ -315,9 +337,10 @@
             // 
             this.rb1Avatar.AutoSize = true;
             this.rb1Avatar.ForeColor = System.Drawing.SystemColors.Control;
-            this.rb1Avatar.Location = new System.Drawing.Point(31, 82);
+            this.rb1Avatar.Location = new System.Drawing.Point(12, 34);
+            this.rb1Avatar.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.rb1Avatar.Name = "rb1Avatar";
-            this.rb1Avatar.Size = new System.Drawing.Size(214, 36);
+            this.rb1Avatar.Size = new System.Drawing.Size(85, 17);
             this.rb1Avatar.TabIndex = 0;
             this.rb1Avatar.TabStop = true;
             this.rb1Avatar.Text = "radioButton1";
@@ -329,9 +352,11 @@
             this.gbPlayer1.Controls.Add(this.lblPlayer1Points);
             this.gbPlayer1.Controls.Add(this.fp1Avatar);
             this.gbPlayer1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gbPlayer1.Location = new System.Drawing.Point(969, 87);
+            this.gbPlayer1.Location = new System.Drawing.Point(363, 36);
+            this.gbPlayer1.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.gbPlayer1.Name = "gbPlayer1";
-            this.gbPlayer1.Size = new System.Drawing.Size(415, 228);
+            this.gbPlayer1.Padding = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.gbPlayer1.Size = new System.Drawing.Size(156, 96);
             this.gbPlayer1.TabIndex = 3;
             this.gbPlayer1.TabStop = false;
             this.gbPlayer1.Text = "PLAYER 1";
@@ -339,9 +364,10 @@
             // lblPoint1
             // 
             this.lblPoint1.AutoSize = true;
-            this.lblPoint1.Location = new System.Drawing.Point(192, 66);
+            this.lblPoint1.Location = new System.Drawing.Point(72, 28);
+            this.lblPoint1.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.lblPoint1.Name = "lblPoint1";
-            this.lblPoint1.Size = new System.Drawing.Size(126, 32);
+            this.lblPoint1.Size = new System.Drawing.Size(50, 13);
             this.lblPoint1.TabIndex = 2;
             this.lblPoint1.Text = "POINTS:";
             // 
@@ -349,9 +375,10 @@
             // 
             this.lblPlayer1Points.AutoSize = true;
             this.lblPlayer1Points.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPlayer1Points.Location = new System.Drawing.Point(261, 145);
+            this.lblPlayer1Points.Location = new System.Drawing.Point(98, 61);
+            this.lblPlayer1Points.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.lblPlayer1Points.Name = "lblPlayer1Points";
-            this.lblPlayer1Points.Size = new System.Drawing.Size(39, 54);
+            this.lblPlayer1Points.Size = new System.Drawing.Size(16, 24);
             this.lblPlayer1Points.TabIndex = 1;
             this.lblPlayer1Points.Text = "-";
             // 
@@ -359,9 +386,10 @@
             // 
             this.fp1Avatar.BackgroundImage = global::Mr.Edip_s_guzel_Programmers_Project1.Properties.Resources.Mickey_Mouse_head_and_ears;
             this.fp1Avatar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.fp1Avatar.Location = new System.Drawing.Point(32, 63);
+            this.fp1Avatar.Location = new System.Drawing.Point(12, 26);
+            this.fp1Avatar.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.fp1Avatar.Name = "fp1Avatar";
-            this.fp1Avatar.Size = new System.Drawing.Size(143, 136);
+            this.fp1Avatar.Size = new System.Drawing.Size(54, 57);
             this.fp1Avatar.TabIndex = 0;
             this.fp1Avatar.TabStop = false;
             // 
@@ -370,9 +398,11 @@
             this.gbPlayer2.Controls.Add(this.lblPoint2);
             this.gbPlayer2.Controls.Add(this.lblPlayer2Points);
             this.gbPlayer2.Controls.Add(this.sp2Avatar);
-            this.gbPlayer2.Location = new System.Drawing.Point(969, 333);
+            this.gbPlayer2.Location = new System.Drawing.Point(363, 140);
+            this.gbPlayer2.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.gbPlayer2.Name = "gbPlayer2";
-            this.gbPlayer2.Size = new System.Drawing.Size(415, 228);
+            this.gbPlayer2.Padding = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.gbPlayer2.Size = new System.Drawing.Size(156, 96);
             this.gbPlayer2.TabIndex = 4;
             this.gbPlayer2.TabStop = false;
             this.gbPlayer2.Text = "PLAYER 2";
@@ -380,9 +410,10 @@
             // lblPoint2
             // 
             this.lblPoint2.AutoSize = true;
-            this.lblPoint2.Location = new System.Drawing.Point(192, 66);
+            this.lblPoint2.Location = new System.Drawing.Point(72, 28);
+            this.lblPoint2.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.lblPoint2.Name = "lblPoint2";
-            this.lblPoint2.Size = new System.Drawing.Size(126, 32);
+            this.lblPoint2.Size = new System.Drawing.Size(50, 13);
             this.lblPoint2.TabIndex = 2;
             this.lblPoint2.Text = "POINTS:";
             // 
@@ -390,9 +421,10 @@
             // 
             this.lblPlayer2Points.AutoSize = true;
             this.lblPlayer2Points.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.1F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPlayer2Points.Location = new System.Drawing.Point(261, 150);
+            this.lblPlayer2Points.Location = new System.Drawing.Point(98, 63);
+            this.lblPlayer2Points.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
             this.lblPlayer2Points.Name = "lblPlayer2Points";
-            this.lblPlayer2Points.Size = new System.Drawing.Size(40, 54);
+            this.lblPlayer2Points.Size = new System.Drawing.Size(17, 24);
             this.lblPlayer2Points.TabIndex = 1;
             this.lblPlayer2Points.Text = "-";
             // 
@@ -400,37 +432,43 @@
             // 
             this.sp2Avatar.BackgroundImage = global::Mr.Edip_s_guzel_Programmers_Project1.Properties.Resources.Mickey_Mouse_head_and_ears;
             this.sp2Avatar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.sp2Avatar.Location = new System.Drawing.Point(35, 66);
+            this.sp2Avatar.Location = new System.Drawing.Point(13, 28);
+            this.sp2Avatar.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.sp2Avatar.Name = "sp2Avatar";
-            this.sp2Avatar.Size = new System.Drawing.Size(143, 136);
+            this.sp2Avatar.Size = new System.Drawing.Size(54, 57);
             this.sp2Avatar.TabIndex = 0;
             this.sp2Avatar.TabStop = false;
             // 
             // btnSetUpPlayer1
             // 
             this.btnSetUpPlayer1.Enabled = false;
-            this.btnSetUpPlayer1.Location = new System.Drawing.Point(658, 779);
+            this.btnSetUpPlayer1.Location = new System.Drawing.Point(247, 327);
+            this.btnSetUpPlayer1.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.btnSetUpPlayer1.Name = "btnSetUpPlayer1";
-            this.btnSetUpPlayer1.Size = new System.Drawing.Size(274, 51);
+            this.btnSetUpPlayer1.Size = new System.Drawing.Size(103, 21);
             this.btnSetUpPlayer1.TabIndex = 5;
             this.btnSetUpPlayer1.Text = "Set Up Player 1";
             this.btnSetUpPlayer1.UseVisualStyleBackColor = true;
+            this.btnSetUpPlayer1.Click += new System.EventHandler(this.btnSetUpPlayer1_Click);
             // 
             // btnSetUpPlayer2
             // 
             this.btnSetUpPlayer2.Enabled = false;
-            this.btnSetUpPlayer2.Location = new System.Drawing.Point(658, 836);
+            this.btnSetUpPlayer2.Location = new System.Drawing.Point(247, 351);
+            this.btnSetUpPlayer2.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.btnSetUpPlayer2.Name = "btnSetUpPlayer2";
-            this.btnSetUpPlayer2.Size = new System.Drawing.Size(274, 51);
+            this.btnSetUpPlayer2.Size = new System.Drawing.Size(103, 21);
             this.btnSetUpPlayer2.TabIndex = 6;
             this.btnSetUpPlayer2.Text = "Set Up Player 2";
             this.btnSetUpPlayer2.UseVisualStyleBackColor = true;
+            this.btnSetUpPlayer2.Click += new System.EventHandler(this.btnSetUpPlayer2_Click);
             // 
             // buttonResetAll
             // 
-            this.buttonResetAll.Location = new System.Drawing.Point(658, 899);
+            this.buttonResetAll.Location = new System.Drawing.Point(247, 377);
+            this.buttonResetAll.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.buttonResetAll.Name = "buttonResetAll";
-            this.buttonResetAll.Size = new System.Drawing.Size(273, 45);
+            this.buttonResetAll.Size = new System.Drawing.Size(102, 19);
             this.buttonResetAll.TabIndex = 7;
             this.buttonResetAll.Text = "RESET ALL";
             this.buttonResetAll.UseVisualStyleBackColor = true;
@@ -438,36 +476,40 @@
             // buttonStart
             // 
             this.buttonStart.Enabled = false;
-            this.buttonStart.Location = new System.Drawing.Point(969, 591);
+            this.buttonStart.Location = new System.Drawing.Point(363, 248);
+            this.buttonStart.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.buttonStart.Name = "buttonStart";
-            this.buttonStart.Size = new System.Drawing.Size(415, 122);
+            this.buttonStart.Size = new System.Drawing.Size(156, 51);
             this.buttonStart.TabIndex = 8;
             this.buttonStart.Text = "START";
             this.buttonStart.UseVisualStyleBackColor = true;
             // 
             // buttonShowResult
             // 
-            this.buttonShowResult.Location = new System.Drawing.Point(1419, 729);
+            this.buttonShowResult.Location = new System.Drawing.Point(532, 306);
+            this.buttonShowResult.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.buttonShowResult.Name = "buttonShowResult";
-            this.buttonShowResult.Size = new System.Drawing.Size(429, 122);
+            this.buttonShowResult.Size = new System.Drawing.Size(161, 51);
             this.buttonShowResult.TabIndex = 9;
             this.buttonShowResult.Text = "SHOW RESULT";
             this.buttonShowResult.UseVisualStyleBackColor = true;
             // 
             // gbReport
             // 
-            this.gbReport.Location = new System.Drawing.Point(1419, 138);
+            this.gbReport.Location = new System.Drawing.Point(532, 58);
+            this.gbReport.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
             this.gbReport.Name = "gbReport";
-            this.gbReport.Size = new System.Drawing.Size(429, 575);
+            this.gbReport.Padding = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.gbReport.Size = new System.Drawing.Size(161, 241);
             this.gbReport.TabIndex = 10;
             this.gbReport.TabStop = false;
             this.gbReport.Text = "REPORT";
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(2133, 995);
+            this.ClientSize = new System.Drawing.Size(800, 417);
             this.Controls.Add(this.gbReport);
             this.Controls.Add(this.buttonShowResult);
             this.Controls.Add(this.buttonStart);
@@ -479,7 +521,6 @@
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
-            this.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.Name = "Form1";
             this.Text = "Mr.Edip\'s_guzel_Programmers_HigherLuck";
             this.groupBox1.ResumeLayout(false);
