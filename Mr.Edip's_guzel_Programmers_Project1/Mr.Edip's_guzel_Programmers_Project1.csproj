@@ -68,6 +68,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -81,6 +82,51 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hd-disney-goofy-mickey-mouse-standing-pose-png-701751694869345pjcqlxx6gb.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\16-168645_mickey-mouse-clubhouse-characters-daisy-kingdom-hearts-hd.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minnie-mouse-png-photos-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mickey-mouse-icon-3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\142767-goofy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\49929-7-daisy-duck-free-hd-image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dice6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dice1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dice2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dice3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dice4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dice5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mickey_Mouse_head_and_ears.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mickey-clubhouse_0-88521e9b3d8047a7b8edc91a803e1e4c.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
