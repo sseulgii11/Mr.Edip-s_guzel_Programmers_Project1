@@ -30,7 +30,7 @@ namespace Mr.Edip_s_guzel_Programmers_Project1
         {
 
             numberRounds.Minimum = 5;
-            numberRounds.Maximum = 30;
+            numberRounds.Maximum = 10;
             numberRounds.Value = 5;
 
             btnSetUpPlayer1.Enabled = false;
