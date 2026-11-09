@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
-using System.Diagnostics.Eventing.Reader;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -20,14 +19,6 @@ namespace Mr.Edip_s_guzel_Programmers_Project1
         private int totalRounds;
         private int currentRound;
         private Player currentPlayer;
-
-        private Random random = new Random();
-        private int player1Roll;
-        private int player2Roll;
-
-
-
-
 
         public Form1()
         {
@@ -69,7 +60,7 @@ namespace Mr.Edip_s_guzel_Programmers_Project1
             if (selectedAvatar == 0)
             {
                 MessageBox.Show("Please select an avatar for Player 1.", "Avatar Selection Required", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
+                return; 
             }
 
             player1 = new Player(Tb1PlayerName.Text, selectedAvatar);
