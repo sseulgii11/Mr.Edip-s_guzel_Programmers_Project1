@@ -116,5 +116,36 @@ namespace Mr.Edip_s_guzel_Programmers_Project1
 
             buttonStart.Enabled = true;
         }
+
+        private void buttonStart_Click(object sender, EventArgs e)
+        {
+            if (player1 == null || player2 == null)
+            {
+                MessageBox.Show("Both players must finish their setup before the game can start.",
+                    "Setup Incomplete", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            totalRounds = (int)numberRounds.Value;
+
+            numberRounds.Enabled = false;
+            tb1PlayerName.Enabled = false;
+            tb2PlayerName.Enabled = false;
+            btnSetUpPlayer1.Enabled = false;
+            btnSetUpPlayer2.Enabled = false;
+            rb1Avatar.Enabled = false;
+            rb2Avatar.Enabled = false;
+            rb3Avatar.Enabled = false;
+            rb4Avatar.Enabled = false;
+
+            currentRound = 1;
+            currentPlayer = player1;
+
+            actionCurrentRound.Text = currentRound.ToString();
+            actionTurnIndicator.Text = player1.Name;
+
+            buttonStart.Enabled = false;
+            buttonRoll.Enabled = true;
+        }
     }
 }
