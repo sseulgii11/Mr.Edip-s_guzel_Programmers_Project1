@@ -475,6 +475,7 @@
             this.buttonStart.TabIndex = 8;
             this.buttonStart.Text = "START";
             this.buttonStart.UseVisualStyleBackColor = true;
+            this.buttonStart.Click += new System.EventHandler(this.ButtonStart_Click);
             // 
             // buttonShowResult
             // 
