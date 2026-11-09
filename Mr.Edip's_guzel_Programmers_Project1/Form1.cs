@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics.Eventing.Reader;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -19,6 +20,10 @@ namespace Mr.Edip_s_guzel_Programmers_Project1
         private int totalRounds;
         private int currentRound;
         private Player currentPlayer;
+
+        private Random random = new Random();
+        private int player1Roll;
+        private int player2Roll;
 
         public Form1()
         {
@@ -60,7 +65,7 @@ namespace Mr.Edip_s_guzel_Programmers_Project1
             if (selectedAvatar == 0)
             {
                 MessageBox.Show("Please select an avatar for Player 1.", "Avatar Selection Required", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return; 
+                return;
             }
 
             player1 = new Player(Tb1PlayerName.Text, selectedAvatar);
@@ -146,6 +151,94 @@ namespace Mr.Edip_s_guzel_Programmers_Project1
 
             buttonStart.Enabled = false;
             buttonRoll.Enabled = true;
+        }
+
+        private void buttonRoll_Click(object sender, EventArgs e)
+        {
+
+            if (currentPlayer == player1)
+            {
+                player1Roll = random.Next(1, 7);
+                DisplayDiceImage(player1Roll);
+
+                currentPlayer = player2;
+                actionTurnIndicator.Text = player2.Name;
+            }
+            else if (currentPlayer == player2)
+            {
+                player2Roll = random.Next(1, 7);
+                DisplayDiceImage(player2Roll);
+                if (player1Roll > player2Roll)
+                {
+                    player1.Points++;
+                    MessageBox.Show(player1.Name + "wins this Round!");
+                }
+                else if (player2Roll > player1Roll)
+                {
+                    player2.Points++;
+                    MessageBox.Show(player2.Name + "wins this Round!");
+                }
+                else
+                {
+                    player1.Points++;
+                    player2.Points++;
+                    MessageBox.Show("It's a tie!  both get 1 point");
+                }
+                lblPlayer1Points.Text = player1.Points.ToString();
+                lblPlayer2Points.Text = player2.Points.ToString();
+
+
+
+
+                if ((currentRound < totalRounds))
+                {
+                    currentRound++;
+                    actionCurrentRound.Text = currentRound.ToString();
+                    currentPlayer = player1;
+                    actionTurnIndicator.Text = player1.Name;
+
+                }
+
+                else
+                {
+
+                    buttonRoll.Enabled = false;
+                    buttonShowResult.Enabled = true;
+                    MessageBox.Show("Game over! click show result");
+                }
+
+
+            }
+
+        }
+
+
+        private void DisplayDiceImage(int rollValue)
+        {
+            pbDice.SizeMode = PictureBoxSizeMode.Zoom;
+            pbDice.BackgroundImage = null;
+            switch (rollValue)
+            {
+
+                case 1:
+                    pbDice.Image = Properties.Resources.Dice1;
+                    break;
+                case 2:
+                    pbDice.Image = Properties.Resources.Dice2;
+                    break;
+                case 3:
+                    pbDice.Image = Properties.Resources.Dice3;
+                    break;
+                case 4:
+                    pbDice.Image = Properties.Resources.Dice4;
+                    break;
+                case 5:
+                    pbDice.Image = Properties.Resources.Dice5;
+                    break;
+                case 6:
+                    pbDice.Image = Properties.Resources.Dice6;
+                    break;
+            }
         }
     }
 }
