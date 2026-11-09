@@ -514,11 +514,11 @@
             // 
             this.gbReport.BackColor = System.Drawing.Color.LemonChiffon;
             this.gbReport.Font = new System.Drawing.Font("Mongolian Baiti", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gbReport.Location = new System.Drawing.Point(1419, 138);
+            this.gbReport.Location = new System.Drawing.Point(1419, 118);
             this.gbReport.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.gbReport.Name = "gbReport";
             this.gbReport.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.gbReport.Size = new System.Drawing.Size(429, 575);
+            this.gbReport.Size = new System.Drawing.Size(429, 595);
             this.gbReport.TabIndex = 10;
             this.gbReport.TabStop = false;
             this.gbReport.Text = "REPORT";
