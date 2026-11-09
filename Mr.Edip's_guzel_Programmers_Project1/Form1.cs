@@ -16,10 +16,6 @@ namespace Mr.Edip_s_guzel_Programmers_Project1
         private Player player1;
         private Player player2;
 
-        private int totalRounds;
-        private int currentRound;
-        private Player currentPlayer;
-
         public Form1()
         {
             InitializeComponent();
@@ -53,14 +49,14 @@ namespace Mr.Edip_s_guzel_Programmers_Project1
         {
             int selectedAvatar = 0;
             if (rb1Avatar.Checked) selectedAvatar = 1;
-            else if (rb2Avatar.Checked) selectedAvatar = 2;
-            else if (rb3Avatar.Checked) selectedAvatar = 3;
-            else if (rb4Avatar.Checked) selectedAvatar = 4;
+            else if (rb1Avatar.Checked) selectedAvatar = 2;
+            else if (rb1Avatar.Checked) selectedAvatar = 3;
+            else if (rb1Avatar.Checked) selectedAvatar = 4;
 
             if (selectedAvatar == 0)
             {
                 MessageBox.Show("Please select an avatar for Player 1.", "Avatar Selection Required", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return; 
+                return;
             }
 
             player1 = new Player(tb1PlayerName.Text, selectedAvatar);
