@@ -33,23 +33,23 @@ namespace Mr.Edip_s_guzel_Programmers_Project1
             numberRounds.Maximum = 10;
             numberRounds.Value = 5;
 
-            btnSetUpPlayer1.Enabled = false;
-            btnSetUpPlayer2.Enabled = false;
+            BtnSetUpPlayer1.Enabled = false;
+            BtnSetUpPlayer2.Enabled = false;
             buttonStart.Enabled = false;
             buttonRoll.Enabled = false;
 
         }
 
-        private void tb1PlayerName_TextChanged(object sender, EventArgs e)
+        private void Tb1PlayerName_TextChanged(object sender, EventArgs e)
         {
-            btnSetUpPlayer1.Enabled = !string.IsNullOrWhiteSpace(tb1PlayerName.Text);
+            BtnSetUpPlayer1.Enabled = !string.IsNullOrWhiteSpace(Tb1PlayerName.Text);
         }
 
-        private void tb2PlayerName_TextChanged(object sender, EventArgs e)
+        private void Tb2PlayerName_TextChanged(object sender, EventArgs e)
         {
-            btnSetUpPlayer2.Enabled = !string.IsNullOrWhiteSpace(tb2PlayerName.Text);
+            BtnSetUpPlayer2.Enabled = !string.IsNullOrWhiteSpace(Tb2PlayerName.Text);
         }
-        private void btnSetUpPlayer1_Click(object sender, EventArgs e)
+        private void BtnSetUpPlayer1_Click(object sender, EventArgs e)
         {
             int selectedAvatar = 0;
             if (rb1Avatar.Checked) selectedAvatar = 1;
@@ -63,11 +63,11 @@ namespace Mr.Edip_s_guzel_Programmers_Project1
                 return; 
             }
 
-            player1 = new Player(tb1PlayerName.Text, selectedAvatar);
+            player1 = new Player(Tb1PlayerName.Text, selectedAvatar);
 
-            tb1PlayerName.Text = player1.Name;
-            tb1PlayerName.Enabled = false;
-            btnSetUpPlayer1.Enabled = false;
+            Tb1PlayerName.Text = player1.Name;
+            Tb1PlayerName.Enabled = false;
+            BtnSetUpPlayer1.Enabled = false;
 
             gbPlayer1.Text = player1.Name;
             fp1Avatar.BackgroundImage = null;
@@ -79,7 +79,7 @@ namespace Mr.Edip_s_guzel_Programmers_Project1
             else if (selectedAvatar == 4) fp1Avatar.Image = pb4Avatar.Image;
         }
 
-        private void btnSetUpPlayer2_Click(object sender, EventArgs e)
+        private void BtnSetUpPlayer2_Click(object sender, EventArgs e)
         {
             int selectedAvatar = 0;
             if (rb1Avatar.Checked) selectedAvatar = 1;
@@ -99,11 +99,11 @@ namespace Mr.Edip_s_guzel_Programmers_Project1
                 return;
             }
 
-            player2 = new Player(tb2PlayerName.Text, selectedAvatar);
+            player2 = new Player(Tb2PlayerName.Text, selectedAvatar);
 
-            tb2PlayerName.Text = player2.Name;
-            tb2PlayerName.Enabled = false;
-            btnSetUpPlayer2.Enabled = false;
+            Tb2PlayerName.Text = player2.Name;
+            Tb2PlayerName.Enabled = false;
+            BtnSetUpPlayer2.Enabled = false;
 
             gbPlayer2.Text = player2.Name;
             sp2Avatar.BackgroundImage = null;
@@ -117,7 +117,7 @@ namespace Mr.Edip_s_guzel_Programmers_Project1
             buttonStart.Enabled = true;
         }
 
-        private void buttonStart_Click(object sender, EventArgs e)
+        private void ButtonStart_Click(object sender, EventArgs e)
         {
             if (player1 == null || player2 == null)
             {
@@ -129,10 +129,10 @@ namespace Mr.Edip_s_guzel_Programmers_Project1
             totalRounds = (int)numberRounds.Value;
 
             numberRounds.Enabled = false;
-            tb1PlayerName.Enabled = false;
-            tb2PlayerName.Enabled = false;
-            btnSetUpPlayer1.Enabled = false;
-            btnSetUpPlayer2.Enabled = false;
+            Tb1PlayerName.Enabled = false;
+            Tb2PlayerName.Enabled = false;
+            BtnSetUpPlayer1.Enabled = false;
+            BtnSetUpPlayer2.Enabled = false;
             rb1Avatar.Enabled = false;
             rb2Avatar.Enabled = false;
             rb3Avatar.Enabled = false;
