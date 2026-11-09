@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Diagnostics.Eventing.Reader;
 using System.Drawing;
+using System.Drawing.Text;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -240,5 +241,34 @@ namespace Mr.Edip_s_guzel_Programmers_Project1
                     break;
             }
         }
+
+        private void buttonShowResult_Click(object sender, EventArgs e)
+        {
+            string winner = "";
+
+            if (player1.Points > player2.Points)
+            {
+
+                winner = player1.Name + "Wins the game! :)";
+            }
+
+            else if (player2.Points > player1.Points)
+            {
+                winner = player2.Name + "Wins the game! :)";
+            }
+
+            else
+            {
+                winner = "it's a tie! Player 1 and Player 2 has equal points.";
+            }
+
+            string gameSummary = "Player 1: " + player1.Name + " - Points: " + player1.Points + "\n" +
+                                 "Player 2: " + player2.Name + " - Points: " + player2.Points + "\n" +
+                                 winner; 
+
+        }
     }
+
 }
+
+
