@@ -16,6 +16,10 @@ namespace Mr.Edip_s_guzel_Programmers_Project1
         private Player player1;
         private Player player2;
 
+        private int totalRounds;
+        private int currentRound;
+        private Player currentPlayer;
+
         public Form1()
         {
             InitializeComponent();
@@ -49,14 +53,14 @@ namespace Mr.Edip_s_guzel_Programmers_Project1
         {
             int selectedAvatar = 0;
             if (rb1Avatar.Checked) selectedAvatar = 1;
-            else if (rb1Avatar.Checked) selectedAvatar = 2;
-            else if (rb1Avatar.Checked) selectedAvatar = 3;
-            else if (rb1Avatar.Checked) selectedAvatar = 4;
+            else if (rb2Avatar.Checked) selectedAvatar = 2;
+            else if (rb3Avatar.Checked) selectedAvatar = 3;
+            else if (rb4Avatar.Checked) selectedAvatar = 4;
 
             if (selectedAvatar == 0)
             {
                 MessageBox.Show("Please select an avatar for Player 1.", "Avatar Selection Required", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                return;
+                return; 
             }
 
             player1 = new Player(tb1PlayerName.Text, selectedAvatar);
@@ -111,6 +115,37 @@ namespace Mr.Edip_s_guzel_Programmers_Project1
             else if (selectedAvatar == 4) sp2Avatar.Image = pb4Avatar.Image;
 
             buttonStart.Enabled = true;
+        }
+
+        private void buttonStart_Click(object sender, EventArgs e)
+        {
+            if (player1 == null || player2 == null)
+            {
+                MessageBox.Show("Both players must finish their setup before the game can start.",
+                    "Setup Incomplete", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            totalRounds = (int)numberRounds.Value;
+
+            numberRounds.Enabled = false;
+            tb1PlayerName.Enabled = false;
+            tb2PlayerName.Enabled = false;
+            btnSetUpPlayer1.Enabled = false;
+            btnSetUpPlayer2.Enabled = false;
+            rb1Avatar.Enabled = false;
+            rb2Avatar.Enabled = false;
+            rb3Avatar.Enabled = false;
+            rb4Avatar.Enabled = false;
+
+            currentRound = 1;
+            currentPlayer = player1;
+
+            actionCurrentRound.Text = currentRound.ToString();
+            actionTurnIndicator.Text = player1.Name;
+
+            buttonStart.Enabled = false;
+            buttonRoll.Enabled = true;
         }
     }
 }
