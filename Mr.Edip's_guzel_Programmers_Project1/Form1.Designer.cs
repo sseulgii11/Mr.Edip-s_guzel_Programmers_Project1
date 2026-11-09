@@ -81,12 +81,14 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.BackColor = System.Drawing.Color.MistyRose;
             this.groupBox1.Controls.Add(this.Tb1PlayerName);
             this.groupBox1.Controls.Add(this.Tb2PlayerName);
             this.groupBox1.Controls.Add(this.numberRounds);
             this.groupBox1.Controls.Add(this.SecondPlayerName);
             this.groupBox1.Controls.Add(this.FirstPlayerName);
             this.groupBox1.Controls.Add(this.initializationsRounds);
+            this.groupBox1.Font = new System.Drawing.Font("Mongolian Baiti", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(16, 67);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.groupBox1.Name = "groupBox1";
@@ -101,7 +103,7 @@
             this.Tb1PlayerName.Location = new System.Drawing.Point(299, 203);
             this.Tb1PlayerName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Tb1PlayerName.Name = "Tb1PlayerName";
-            this.Tb1PlayerName.Size = new System.Drawing.Size(276, 38);
+            this.Tb1PlayerName.Size = new System.Drawing.Size(276, 39);
             this.Tb1PlayerName.TabIndex = 5;
             this.Tb1PlayerName.TextChanged += new System.EventHandler(this.Tb1PlayerName_TextChanged);
             // 
@@ -110,7 +112,7 @@
             this.Tb2PlayerName.Location = new System.Drawing.Point(299, 250);
             this.Tb2PlayerName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Tb2PlayerName.Name = "Tb2PlayerName";
-            this.Tb2PlayerName.Size = new System.Drawing.Size(276, 38);
+            this.Tb2PlayerName.Size = new System.Drawing.Size(276, 39);
             this.Tb2PlayerName.TabIndex = 4;
             this.Tb2PlayerName.TextChanged += new System.EventHandler(this.Tb2PlayerName_TextChanged);
             // 
@@ -124,7 +126,7 @@
             0,
             0});
             this.numberRounds.Name = "numberRounds";
-            this.numberRounds.Size = new System.Drawing.Size(120, 38);
+            this.numberRounds.Size = new System.Drawing.Size(120, 39);
             this.numberRounds.TabIndex = 3;
             this.numberRounds.Value = new decimal(new int[] {
             1,
@@ -137,7 +139,7 @@
             this.SecondPlayerName.AutoSize = true;
             this.SecondPlayerName.Location = new System.Drawing.Point(11, 250);
             this.SecondPlayerName.Name = "SecondPlayerName";
-            this.SecondPlayerName.Size = new System.Drawing.Size(281, 32);
+            this.SecondPlayerName.Size = new System.Drawing.Size(246, 30);
             this.SecondPlayerName.TabIndex = 2;
             this.SecondPlayerName.Text = "Second Player Name";
             // 
@@ -146,7 +148,7 @@
             this.FirstPlayerName.AutoSize = true;
             this.FirstPlayerName.Location = new System.Drawing.Point(11, 205);
             this.FirstPlayerName.Name = "FirstPlayerName";
-            this.FirstPlayerName.Size = new System.Drawing.Size(239, 32);
+            this.FirstPlayerName.Size = new System.Drawing.Size(216, 30);
             this.FirstPlayerName.TabIndex = 1;
             this.FirstPlayerName.Text = "First Player Name";
             // 
@@ -155,17 +157,20 @@
             this.initializationsRounds.AutoSize = true;
             this.initializationsRounds.Location = new System.Drawing.Point(11, 55);
             this.initializationsRounds.Name = "initializationsRounds";
-            this.initializationsRounds.Size = new System.Drawing.Size(112, 32);
+            this.initializationsRounds.Size = new System.Drawing.Size(99, 30);
             this.initializationsRounds.TabIndex = 0;
             this.initializationsRounds.Text = "Rounds";
             // 
             // groupBox2
             // 
+            this.groupBox2.BackColor = System.Drawing.Color.MistyRose;
             this.groupBox2.Controls.Add(this.pbDice);
             this.groupBox2.Controls.Add(this.buttonRoll);
             this.groupBox2.Controls.Add(this.actionTurnIndicator);
             this.groupBox2.Controls.Add(this.actionCurrentRound);
             this.groupBox2.Controls.Add(this.actionRound);
+            this.groupBox2.Font = new System.Drawing.Font("Mongolian Baiti", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox2.ForeColor = System.Drawing.Color.Black;
             this.groupBox2.Location = new System.Drawing.Point(16, 429);
             this.groupBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox2.Name = "groupBox2";
@@ -188,6 +193,7 @@
             // 
             // buttonRoll
             // 
+            this.buttonRoll.BackColor = System.Drawing.Color.DarkSalmon;
             this.buttonRoll.Enabled = false;
             this.buttonRoll.Location = new System.Drawing.Point(16, 231);
             this.buttonRoll.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -195,18 +201,18 @@
             this.buttonRoll.Size = new System.Drawing.Size(576, 52);
             this.buttonRoll.TabIndex = 3;
             this.buttonRoll.Text = "ROLL";
-            this.buttonRoll.UseVisualStyleBackColor = true;
+            this.buttonRoll.UseVisualStyleBackColor = false;
             this.buttonRoll.Click += new System.EventHandler(this.buttonRoll_Click);
             // 
             // actionTurnIndicator
             // 
             this.actionTurnIndicator.AutoSize = true;
-            this.actionTurnIndicator.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.actionTurnIndicator.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.900001F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.actionTurnIndicator.BackColor = System.Drawing.SystemColors.Window;
+            this.actionTurnIndicator.Font = new System.Drawing.Font("Mongolian Baiti", 9.900001F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.actionTurnIndicator.ForeColor = System.Drawing.SystemColors.InfoText;
             this.actionTurnIndicator.Location = new System.Drawing.Point(24, 169);
             this.actionTurnIndicator.Name = "actionTurnIndicator";
-            this.actionTurnIndicator.Size = new System.Drawing.Size(225, 39);
+            this.actionTurnIndicator.Size = new System.Drawing.Size(202, 36);
             this.actionTurnIndicator.TabIndex = 2;
             this.actionTurnIndicator.Text = "Player Name";
             // 
@@ -215,21 +221,22 @@
             this.actionCurrentRound.AutoSize = true;
             this.actionCurrentRound.Location = new System.Drawing.Point(128, 76);
             this.actionCurrentRound.Name = "actionCurrentRound";
-            this.actionCurrentRound.Size = new System.Drawing.Size(92, 32);
+            this.actionCurrentRound.Size = new System.Drawing.Size(22, 30);
             this.actionCurrentRound.TabIndex = 1;
-            this.actionCurrentRound.Text = "label3";
+            this.actionCurrentRound.Text = "-";
             // 
             // actionRound
             // 
             this.actionRound.AutoSize = true;
             this.actionRound.Location = new System.Drawing.Point(16, 76);
             this.actionRound.Name = "actionRound";
-            this.actionRound.Size = new System.Drawing.Size(106, 32);
+            this.actionRound.Size = new System.Drawing.Size(96, 30);
             this.actionRound.TabIndex = 0;
             this.actionRound.Text = "Round:";
             // 
             // groupBox3
             // 
+            this.groupBox3.BackColor = System.Drawing.Color.MistyRose;
             this.groupBox3.Controls.Add(this.pb4Avatar);
             this.groupBox3.Controls.Add(this.pb3Avatar);
             this.groupBox3.Controls.Add(this.pb2Avatar);
@@ -238,6 +245,7 @@
             this.groupBox3.Controls.Add(this.rb3Avatar);
             this.groupBox3.Controls.Add(this.rb2Avatar);
             this.groupBox3.Controls.Add(this.rb1Avatar);
+            this.groupBox3.Font = new System.Drawing.Font("Mongolian Baiti", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox3.Location = new System.Drawing.Point(659, 67);
             this.groupBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox3.Name = "groupBox3";
@@ -298,10 +306,10 @@
             this.rb4Avatar.Location = new System.Drawing.Point(32, 560);
             this.rb4Avatar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.rb4Avatar.Name = "rb4Avatar";
-            this.rb4Avatar.Size = new System.Drawing.Size(214, 36);
+            this.rb4Avatar.Size = new System.Drawing.Size(154, 34);
             this.rb4Avatar.TabIndex = 3;
             this.rb4Avatar.TabStop = true;
-            this.rb4Avatar.Text = "radioButton4";
+            this.rb4Avatar.Text = "radioBu4";
             this.rb4Avatar.UseVisualStyleBackColor = true;
             // 
             // rb3Avatar
@@ -311,10 +319,10 @@
             this.rb3Avatar.Location = new System.Drawing.Point(32, 408);
             this.rb3Avatar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.rb3Avatar.Name = "rb3Avatar";
-            this.rb3Avatar.Size = new System.Drawing.Size(214, 36);
+            this.rb3Avatar.Size = new System.Drawing.Size(154, 34);
             this.rb3Avatar.TabIndex = 2;
             this.rb3Avatar.TabStop = true;
-            this.rb3Avatar.Text = "radioButton3";
+            this.rb3Avatar.Text = "radioBu3";
             this.rb3Avatar.UseVisualStyleBackColor = true;
             // 
             // rb2Avatar
@@ -324,10 +332,10 @@
             this.rb2Avatar.Location = new System.Drawing.Point(32, 246);
             this.rb2Avatar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.rb2Avatar.Name = "rb2Avatar";
-            this.rb2Avatar.Size = new System.Drawing.Size(214, 36);
+            this.rb2Avatar.Size = new System.Drawing.Size(154, 34);
             this.rb2Avatar.TabIndex = 1;
             this.rb2Avatar.TabStop = true;
-            this.rb2Avatar.Text = "radioButton2";
+            this.rb2Avatar.Text = "radioBu2";
             this.rb2Avatar.UseVisualStyleBackColor = true;
             // 
             // rb1Avatar
@@ -337,18 +345,19 @@
             this.rb1Avatar.Location = new System.Drawing.Point(32, 81);
             this.rb1Avatar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.rb1Avatar.Name = "rb1Avatar";
-            this.rb1Avatar.Size = new System.Drawing.Size(214, 36);
+            this.rb1Avatar.Size = new System.Drawing.Size(140, 34);
             this.rb1Avatar.TabIndex = 0;
             this.rb1Avatar.TabStop = true;
-            this.rb1Avatar.Text = "radioButton1";
+            this.rb1Avatar.Text = "radioB1";
             this.rb1Avatar.UseVisualStyleBackColor = true;
             // 
             // gbPlayer1
             // 
+            this.gbPlayer1.BackColor = System.Drawing.Color.IndianRed;
             this.gbPlayer1.Controls.Add(this.lblPoint1);
             this.gbPlayer1.Controls.Add(this.lblPlayer1Points);
             this.gbPlayer1.Controls.Add(this.fp1Avatar);
-            this.gbPlayer1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gbPlayer1.Font = new System.Drawing.Font("Mongolian Baiti", 8.1F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gbPlayer1.Location = new System.Drawing.Point(968, 86);
             this.gbPlayer1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.gbPlayer1.Name = "gbPlayer1";
@@ -363,7 +372,7 @@
             this.lblPoint1.AutoSize = true;
             this.lblPoint1.Location = new System.Drawing.Point(192, 67);
             this.lblPoint1.Name = "lblPoint1";
-            this.lblPoint1.Size = new System.Drawing.Size(126, 32);
+            this.lblPoint1.Size = new System.Drawing.Size(126, 30);
             this.lblPoint1.TabIndex = 2;
             this.lblPoint1.Text = "POINTS:";
             // 
@@ -390,9 +399,11 @@
             // 
             // gbPlayer2
             // 
+            this.gbPlayer2.BackColor = System.Drawing.Color.SteelBlue;
             this.gbPlayer2.Controls.Add(this.lblPoint2);
             this.gbPlayer2.Controls.Add(this.lblPlayer2Points);
             this.gbPlayer2.Controls.Add(this.sp2Avatar);
+            this.gbPlayer2.Font = new System.Drawing.Font("Mongolian Baiti", 8.1F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gbPlayer2.Location = new System.Drawing.Point(968, 334);
             this.gbPlayer2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.gbPlayer2.Name = "gbPlayer2";
@@ -407,7 +418,7 @@
             this.lblPoint2.AutoSize = true;
             this.lblPoint2.Location = new System.Drawing.Point(192, 67);
             this.lblPoint2.Name = "lblPoint2";
-            this.lblPoint2.Size = new System.Drawing.Size(126, 32);
+            this.lblPoint2.Size = new System.Drawing.Size(126, 30);
             this.lblPoint2.TabIndex = 2;
             this.lblPoint2.Text = "POINTS:";
             // 
@@ -434,63 +445,75 @@
             // 
             // BtnSetUpPlayer1
             // 
+            this.BtnSetUpPlayer1.BackColor = System.Drawing.Color.IndianRed;
             this.BtnSetUpPlayer1.Enabled = false;
+            this.BtnSetUpPlayer1.Font = new System.Drawing.Font("Mongolian Baiti", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnSetUpPlayer1.Location = new System.Drawing.Point(659, 780);
             this.BtnSetUpPlayer1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BtnSetUpPlayer1.Name = "BtnSetUpPlayer1";
             this.BtnSetUpPlayer1.Size = new System.Drawing.Size(275, 50);
             this.BtnSetUpPlayer1.TabIndex = 5;
             this.BtnSetUpPlayer1.Text = "Set Up Player 1";
-            this.BtnSetUpPlayer1.UseVisualStyleBackColor = true;
+            this.BtnSetUpPlayer1.UseVisualStyleBackColor = false;
             this.BtnSetUpPlayer1.Click += new System.EventHandler(this.BtnSetUpPlayer1_Click);
             // 
             // BtnSetUpPlayer2
             // 
+            this.BtnSetUpPlayer2.BackColor = System.Drawing.Color.SteelBlue;
             this.BtnSetUpPlayer2.Enabled = false;
+            this.BtnSetUpPlayer2.Font = new System.Drawing.Font("Mongolian Baiti", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnSetUpPlayer2.Location = new System.Drawing.Point(659, 837);
             this.BtnSetUpPlayer2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BtnSetUpPlayer2.Name = "BtnSetUpPlayer2";
             this.BtnSetUpPlayer2.Size = new System.Drawing.Size(275, 50);
             this.BtnSetUpPlayer2.TabIndex = 6;
             this.BtnSetUpPlayer2.Text = "Set Up Player 2";
-            this.BtnSetUpPlayer2.UseVisualStyleBackColor = true;
+            this.BtnSetUpPlayer2.UseVisualStyleBackColor = false;
             this.BtnSetUpPlayer2.Click += new System.EventHandler(this.BtnSetUpPlayer2_Click);
             // 
             // buttonResetAll
             // 
+            this.buttonResetAll.BackColor = System.Drawing.Color.Linen;
+            this.buttonResetAll.Font = new System.Drawing.Font("Mongolian Baiti", 8.1F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonResetAll.Location = new System.Drawing.Point(659, 899);
             this.buttonResetAll.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonResetAll.Name = "buttonResetAll";
             this.buttonResetAll.Size = new System.Drawing.Size(272, 45);
             this.buttonResetAll.TabIndex = 7;
             this.buttonResetAll.Text = "RESET ALL";
-            this.buttonResetAll.UseVisualStyleBackColor = true;
+            this.buttonResetAll.UseVisualStyleBackColor = false;
             // 
             // buttonStart
             // 
+            this.buttonStart.BackColor = System.Drawing.Color.Linen;
             this.buttonStart.Enabled = false;
+            this.buttonStart.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonStart.Location = new System.Drawing.Point(968, 591);
             this.buttonStart.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonStart.Name = "buttonStart";
             this.buttonStart.Size = new System.Drawing.Size(416, 122);
             this.buttonStart.TabIndex = 8;
             this.buttonStart.Text = "START";
-            this.buttonStart.UseVisualStyleBackColor = true;
+            this.buttonStart.UseVisualStyleBackColor = false;
             this.buttonStart.Click += new System.EventHandler(this.ButtonStart_Click);
             // 
             // buttonShowResult
             // 
+            this.buttonShowResult.BackColor = System.Drawing.Color.Linen;
+            this.buttonShowResult.Font = new System.Drawing.Font("Mongolian Baiti", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonShowResult.Location = new System.Drawing.Point(1419, 730);
             this.buttonShowResult.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.buttonShowResult.Name = "buttonShowResult";
             this.buttonShowResult.Size = new System.Drawing.Size(429, 122);
             this.buttonShowResult.TabIndex = 9;
             this.buttonShowResult.Text = "SHOW RESULT";
-            this.buttonShowResult.UseVisualStyleBackColor = true;
+            this.buttonShowResult.UseVisualStyleBackColor = false;
             this.buttonShowResult.Click += new System.EventHandler(this.buttonShowResult_Click);
             // 
             // gbReport
             // 
+            this.gbReport.BackColor = System.Drawing.Color.LemonChiffon;
+            this.gbReport.Font = new System.Drawing.Font("Mongolian Baiti", 8.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gbReport.Location = new System.Drawing.Point(1419, 138);
             this.gbReport.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.gbReport.Name = "gbReport";
@@ -504,6 +527,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.LightSteelBlue;
             this.ClientSize = new System.Drawing.Size(2133, 994);
             this.Controls.Add(this.gbReport);
             this.Controls.Add(this.buttonShowResult);

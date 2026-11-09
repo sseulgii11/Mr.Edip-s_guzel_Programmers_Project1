@@ -83,6 +83,16 @@ namespace Mr.Edip_s_guzel_Programmers_Project1.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _2310becaa0c3a11194d57582167e44a7 {
+            get {
+                object obj = ResourceManager.GetObject("2310becaa0c3a11194d57582167e44a7", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _49929_7_daisy_duck_free_hd_image {
             get {
                 object obj = ResourceManager.GetObject("49929-7-daisy-duck-free-hd-image", resourceCulture);
@@ -176,6 +186,26 @@ namespace Mr.Edip_s_guzel_Programmers_Project1.Properties {
         internal static System.Drawing.Bitmap mickey_clubhouse_0_88521e9b3d8047a7b8edc91a803e1e4c {
             get {
                 object obj = ResourceManager.GetObject("mickey-clubhouse_0-88521e9b3d8047a7b8edc91a803e1e4c", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap mickey_mouse_clubhouse_landscape_qcqlcdubmvt7dj58 {
+            get {
+                object obj = ResourceManager.GetObject("mickey-mouse-clubhouse-landscape-qcqlcdubmvt7dj58", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap mickey_mouse_clubhouse_landscape_qcqlcdubmvt7dj581 {
+            get {
+                object obj = ResourceManager.GetObject("mickey-mouse-clubhouse-landscape-qcqlcdubmvt7dj581", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

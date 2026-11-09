@@ -121,11 +121,14 @@
   <data name="mickey-mouse-icon-3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\mickey-mouse-icon-3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Dice1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Dice1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="mickey-clubhouse_0-88521e9b3d8047a7b8edc91a803e1e4c" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mickey-clubhouse_0-88521e9b3d8047a7b8edc91a803e1e4c.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="16-168645_mickey-mouse-clubhouse-characters-daisy-kingdom-hearts-hd" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\16-168645_mickey-mouse-clubhouse-characters-daisy-kingdom-hearts-hd.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mickey-mouse-clubhouse-landscape-qcqlcdubmvt7dj58" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mickey-mouse-clubhouse-landscape-qcqlcdubmvt7dj58.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Dice6" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Dice6.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -136,8 +139,8 @@
   <data name="minnie-mouse-png-photos-1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\minnie-mouse-png-photos-1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Dice2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Dice2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="images" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\images.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Dice5" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Dice5.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -151,16 +154,22 @@
   <data name="142767-goofy" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\142767-goofy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="2310becaa0c3a11194d57582167e44a7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\2310becaa0c3a11194d57582167e44a7.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Dice2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Dice2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="hd-disney-goofy-mickey-mouse-standing-pose-png-701751694869345pjcqlxx6gb" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\hd-disney-goofy-mickey-mouse-standing-pose-png-701751694869345pjcqlxx6gb.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Mickey_Mouse_head_and_ears" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Mickey_Mouse_head_and_ears.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="images" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\images.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Dice1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Dice1.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="mickey-clubhouse_0-88521e9b3d8047a7b8edc91a803e1e4c" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\mickey-clubhouse_0-88521e9b3d8047a7b8edc91a803e1e4c.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="mickey-mouse-clubhouse-landscape-qcqlcdubmvt7dj581" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mickey-mouse-clubhouse-landscape-qcqlcdubmvt7dj581.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
