@@ -9,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace Mr.Edip_s_guzel_Programmers_Project1
 {
@@ -241,34 +242,56 @@ namespace Mr.Edip_s_guzel_Programmers_Project1
                     break;
             }
         }
-
         private void buttonShowResult_Click(object sender, EventArgs e)
         {
             string winner = "";
 
             if (player1.Points > player2.Points)
             {
-
-                winner = player1.Name + "Wins the game! :)";
+                winner = player1.Name + " wins the game! :)";
             }
-
             else if (player2.Points > player1.Points)
             {
-                winner = player2.Name + "Wins the game! :)";
+                winner = player2.Name + " wins the game! :)";
             }
-
             else
             {
-                winner = "it's a tie! Player 1 and Player 2 has equal points.";
+                winner = "It's a tie! Player 1 and Player 2 have equal points.";
             }
 
             string gameSummary = "Player 1: " + player1.Name + " - Points: " + player1.Points + "\n" +
                                  "Player 2: " + player2.Name + " - Points: " + player2.Points + "\n" +
                                  winner; 
 
+            string filePath = "results.txt";
+
+            using (StreamWriter writer = new StreamWriter(filePath, true))
+            {
+                writer.WriteLine("Date: " + DateTime.Now.ToString());
+                writer.WriteLine("Player 1: " + player1.Name + " - Points: " + player1.Points);
+                writer.WriteLine("Player 2: " + player2.Name + " - Points: " + player2.Points);
+                writer.WriteLine(winner);
+                writer.WriteLine("------------------------------");
         }
+
+            ListBox lbReport = gbReport.Controls.OfType<ListBox>().FirstOrDefault();
+            if (lbReport == null)
+            {
+                lbReport = new ListBox();
+                lbReport.Dock = DockStyle.Fill;
+                gbReport.Controls.Add(lbReport);
+            }
+
+            lbReport.Items.Clear();
+            foreach (string line in File.ReadAllLines(filePath))
+            {
+                lbReport.Items.Add(line);
     }
 
+            MessageBox.Show(gameSummary, "Game Result");
+            buttonShowResult.Enabled = false;
+        }
+    }
 }
 
 
