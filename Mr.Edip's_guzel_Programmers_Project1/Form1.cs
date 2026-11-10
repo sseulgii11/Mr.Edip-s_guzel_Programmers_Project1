@@ -210,18 +210,18 @@ namespace Mr.Edip_s_guzel_Programmers_Project1
                 if (player1Roll > player2Roll)
                 {
                     player1.Points++;
-                    MessageBox.Show(player1.Name + "wins this Round!");
+                    //MessageBox.Show(player1.Name + "wins this Round!");
                 }
                 else if (player2Roll > player1Roll)
                 {
                     player2.Points++;
-                    MessageBox.Show(player2.Name + "wins this Round!");
+                    //MessageBox.Show(player2.Name + "wins this Round!");
                 }
                 else
                 {
                     player1.Points++;
                     player2.Points++;
-                    MessageBox.Show("It's a tie!  both get 1 point");
+                    //MessageBox.Show("It's a tie!  both get 1 point");
                 }
                 lblPlayer1Points.Text = player1.Points.ToString();
                 lblPlayer2Points.Text = player2.Points.ToString();
