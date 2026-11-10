@@ -44,6 +44,7 @@ namespace Mr.Edip_s_guzel_Programmers_Project1
             BtnSetUpPlayer2.Enabled = false;
             buttonStart.Enabled = false;
             buttonRoll.Enabled = false;
+            buttonShowResult.Enabled = true;
 
         }
 
@@ -281,6 +282,13 @@ namespace Mr.Edip_s_guzel_Programmers_Project1
         }
         private void buttonShowResult_Click(object sender, EventArgs e)
         {
+            if (player1 == null || player2 == null)
+            {
+                MessageBox.Show("Both players must finish their setup before showing the results.",
+                    "Setup Incomplete", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
             string winner = "";
 
             if (player1.Points > player2.Points)
