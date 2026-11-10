@@ -447,7 +447,7 @@
             // 
             this.BtnSetUpPlayer1.BackColor = System.Drawing.Color.IndianRed;
             this.BtnSetUpPlayer1.Enabled = false;
-            this.BtnSetUpPlayer1.Font = new System.Drawing.Font("Mongolian Baiti", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnSetUpPlayer1.Font = new System.Drawing.Font("Mongolian Baiti", 8.1F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnSetUpPlayer1.Location = new System.Drawing.Point(659, 780);
             this.BtnSetUpPlayer1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BtnSetUpPlayer1.Name = "BtnSetUpPlayer1";
@@ -461,7 +461,7 @@
             // 
             this.BtnSetUpPlayer2.BackColor = System.Drawing.Color.SteelBlue;
             this.BtnSetUpPlayer2.Enabled = false;
-            this.BtnSetUpPlayer2.Font = new System.Drawing.Font("Mongolian Baiti", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnSetUpPlayer2.Font = new System.Drawing.Font("Mongolian Baiti", 8.1F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnSetUpPlayer2.Location = new System.Drawing.Point(659, 837);
             this.BtnSetUpPlayer2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.BtnSetUpPlayer2.Name = "BtnSetUpPlayer2";

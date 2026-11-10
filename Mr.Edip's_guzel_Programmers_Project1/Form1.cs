@@ -47,6 +47,39 @@ namespace Mr.Edip_s_guzel_Programmers_Project1
 
         }
 
+        private void ResetGame()
+
+        {
+            player1 = null;
+            player2 = null;
+
+            Tb1PlayerName.Clear();
+            Tb1PlayerName.Enabled = true;
+            Tb2PlayerName.Clear();
+            Tb2PlayerName.Enabled = true;
+
+            gbPlayer1.Text = "Player 1";
+            gbPlayer2.Text = "Player 2";
+            lblPlayer1Points.Text = "-";
+            lblPlayer2Points.Text = "-";
+
+            fp1Avatar.Image = Properties.Resources.Mickey_Mouse_head_and_ears;
+            sp2Avatar.Image = Properties.Resources.Mickey_Mouse_head_and_ears;
+            pbDice.Image = Properties.Resources.mickey_clubhouse_0_88521e9b3d8047a7b8edc91a803e1e4c;
+            actionCurrentRound.Text = "0";
+            actionTurnIndicator.Text = "Player Name";
+
+            numberRounds.Enabled = true;
+            foreach (RadioButton rb in new[] { rb1Avatar, rb2Avatar, rb3Avatar, rb4Avatar })
+            {
+                rb.Checked = false;
+                rb.Enabled = true;
+            }
+
+            SetupInitialState();
+        }
+
+
         private void Tb1PlayerName_TextChanged(object sender, EventArgs e)
         {
             BtnSetUpPlayer1.Enabled = !string.IsNullOrWhiteSpace(Tb1PlayerName.Text);
@@ -290,6 +323,8 @@ namespace Mr.Edip_s_guzel_Programmers_Project1
 
             MessageBox.Show(gameSummary, "Game Result");
             buttonShowResult.Enabled = false;
+
+            ResetGame();
         }
     }
 }
