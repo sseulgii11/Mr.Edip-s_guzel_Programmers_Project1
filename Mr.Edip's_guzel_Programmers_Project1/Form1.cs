@@ -63,9 +63,13 @@ namespace Mr.Edip_s_guzel_Programmers_Project1
             lblPlayer1Points.Text = "-";
             lblPlayer2Points.Text = "-";
 
+            fp1Avatar.SizeMode = PictureBoxSizeMode.Zoom;
             fp1Avatar.Image = Properties.Resources.Mickey_Mouse_head_and_ears;
+            sp2Avatar.SizeMode = PictureBoxSizeMode.Zoom;
             sp2Avatar.Image = Properties.Resources.Mickey_Mouse_head_and_ears;
+            pbDice.SizeMode = PictureBoxSizeMode.Zoom;
             pbDice.Image = Properties.Resources.mickey_clubhouse_0_88521e9b3d8047a7b8edc91a803e1e4c;
+
             actionCurrentRound.Text = "0";
             actionTurnIndicator.Text = "Player Name";
 
@@ -294,7 +298,7 @@ namespace Mr.Edip_s_guzel_Programmers_Project1
 
             string gameSummary = "Player 1: " + player1.Name + " - Points: " + player1.Points + "\n" +
                                  "Player 2: " + player2.Name + " - Points: " + player2.Points + "\n" +
-                                 winner; 
+                                 winner;
 
             string filePath = "results.txt";
 
@@ -305,7 +309,7 @@ namespace Mr.Edip_s_guzel_Programmers_Project1
                 writer.WriteLine("Player 2: " + player2.Name + " - Points: " + player2.Points);
                 writer.WriteLine(winner);
                 writer.WriteLine("------------------------------");
-        }
+            }
 
             ListBox lbReport = gbReport.Controls.OfType<ListBox>().FirstOrDefault();
             if (lbReport == null)
@@ -319,12 +323,19 @@ namespace Mr.Edip_s_guzel_Programmers_Project1
             foreach (string line in File.ReadAllLines(filePath))
             {
                 lbReport.Items.Add(line);
-    }
+            }
 
             MessageBox.Show(gameSummary, "Game Result");
             buttonShowResult.Enabled = false;
 
             ResetGame();
+        }
+
+        private void buttonResetAll_Click(object sender, EventArgs e)
+        {
+            ResetGame();
+
+
         }
     }
 }

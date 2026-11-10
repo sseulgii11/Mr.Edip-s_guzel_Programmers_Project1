@@ -482,6 +482,7 @@
             this.buttonResetAll.TabIndex = 7;
             this.buttonResetAll.Text = "RESET ALL";
             this.buttonResetAll.UseVisualStyleBackColor = false;
+            this.buttonResetAll.Click += new System.EventHandler(this.buttonResetAll_Click);
             // 
             // buttonStart
             // 
